@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Order from '../order/order';
+import Order from '../../container/order/Order';
 
-function OrderList({ orders }) {
+const  OrderList = ({ orders }) => {
   const orderList = orders.map(order => <Order order={order} key={order.id} />)
   return (
     <div>
